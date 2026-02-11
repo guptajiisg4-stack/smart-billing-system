@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billing | Smart Billing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <h2>Smart Billing</h2>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="billing.html" class="active">Billing</a>
+      <a href="invoice.html">Invoice</a>
+    </aside>
+
+    <main class="main-content">
+      <h1>Generate Bill</h1>
+      <section class="card">
+        <form id="billForm" class="form-grid">
+          <select id="customerSelect" required></select>
+          <input id="discount" type="number" min="0" step="0.01" placeholder="Discount" value="0" />
+          <button type="button" id="addItemBtn" class="btn-secondary">Add Product Line</button>
+          <div id="billItems"></div>
+          <div><strong>Amount:</strong> <span id="billAmount">0.00</span></div>
+          <div><strong>Final Amount:</strong> <span id="finalAmount">0.00</span></div>
+          <button type="submit" class="btn-primary">Create Bill</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/billing.js"></script>
+</body>
+</html>
