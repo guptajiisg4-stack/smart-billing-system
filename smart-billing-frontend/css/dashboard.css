@@ -1,0 +1,10 @@
+.stat-card h3 {
+  font-size: 0.95rem;
+  color: #475569;
+}
+.stat-card p {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #0f172a;
+  font-weight: 700;
+}
